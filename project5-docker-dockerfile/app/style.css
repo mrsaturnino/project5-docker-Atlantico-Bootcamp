@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white; /* Cor de fundo padrão (branco) */
+    transition: background-color 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: black;
+}
+
+h1 {
+    font-size: 36px;
+    animation: moveBlock 10s linear infinite; /* Adiciona a animação de movimento */
+}
+
+@keyframes moveBlock {
+    0% {
+        transform: translateX(-55%); /* Começa na posição inicial (sem deslocamento horizontal) */
+    }
+    100% {
+        transform: translateX(120%); /* Move-se horizontalmente 80% para a direita */
+    }
+}
+
