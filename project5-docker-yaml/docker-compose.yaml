@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  meu-apache:
+    image: httpd:latest
+    container_name: apacheApp
+    ports:
+      - "8080:80"
+    volumes:
+      - ./project5-docker-Atlantico-Bootcamp/project5-docker-yaml/app:/usr/local/apache2/htdocs
